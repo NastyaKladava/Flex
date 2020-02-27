@@ -1,8 +1,8 @@
 body {
     width: 800px;
     height:600px;
-    box-sizing: border-box;
     border: 1px solid black;
+    box-sizing: border-box;
 }
 .discussion {
     border-bottom: 1px solid black;
@@ -11,7 +11,7 @@ body {
     position: relative;
     background-color: rgb(210, 230, 230);
 }
-.close {
+button {
     position: absolute;
     top: 2px;
     right: 5px;
@@ -19,7 +19,7 @@ body {
     background-color: rgb(210, 230, 230);
     cursor: pointer;
 }
-.close::before {
+button::before {
     content:"\2718";
 }
 .bottom {
@@ -40,13 +40,12 @@ body {
     background-color: rgb(48, 190, 190);
 }
 .name{
-    margin-bottom: 10px;
     border: 1px solid black;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     text-align:center;
-    vertical-align: middle;
+    line-height: 50px;
     position: relative;
     background-color: rgb(210, 230, 230);
 }
